@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="rootPane" prefHeight="403.0" prefWidth="598.0">
+         <children>
+            <Label layoutX="232.0" layoutY="57.0" prefHeight="17.0" prefWidth="113.0" text="Extra Time Approval" />
+            <Button fx:id="Approve_Request" layoutX="223.0" layoutY="301.0" minWidth="50.0" onAction="#ApproveRequest" prefHeight="25.0" prefWidth="65.0" text="Approve" />
+            <Label layoutX="24.0" layoutY="140.0" text="Choose Request" />
+            <Button fx:id="Decline_Request" layoutX="330.0" layoutY="301.0" minWidth="50.0" onAction="#DeclineRequest" prefHeight="25.0" prefWidth="65.0" text="Decline" />
+            <ChoiceBox fx:id="Choose_Exam" layoutX="123.0" layoutY="136.0" prefHeight="26.0" prefWidth="459.0" />
+            <MenuBar layoutX="138.0" layoutY="8.0" prefHeight="26.0" prefWidth="301.0">
+               <menus>
+                  <Menu fx:id="HomePage" mnemonicParsing="false" onAction="#HomePageClicked" text="HomePage">
+                     <items>
+                        <MenuItem fx:id="principal_menu_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Go Homepage" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="principal_quetions_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Qeustions">
+                     <items>
+                        <MenuItem fx:id="principal_quetions" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="View Questions collection" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Exams">
+                     <items>
+                        <MenuItem fx:id="PrincipleExams_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="View Exams" />
+                        <MenuItem fx:id="ExtraTimeApproval_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Time Extention requests" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Grades">
+                     <items>
+                        <MenuItem fx:id="PViewGrades_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="View Grades" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

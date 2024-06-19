@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="rootPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="20.0" layoutY="153.0" text="question:" />
+      <TextField fx:id="Question_feild" layoutX="84.0" layoutY="140.0" prefHeight="43.0" prefWidth="447.0" />
+      <Label layoutX="21.0" layoutY="204.0" text="answer 1" />
+      <Button fx:id="add_question_bt" layoutX="266.0" layoutY="429.0" minWidth="50.0" onAction="#add_clicked" text="add" />
+      <Label id="wrongDetails" layoutX="84.0" layoutY="278.0" prefHeight="34.0" prefWidth="447.0" />
+      <Label id="wrongDetails" layoutX="84.0" layoutY="213.0" prefHeight="34.0" prefWidth="447.0" />
+      <Label layoutX="22.0" layoutY="241.0" text="answer2" />
+      <Label layoutX="21.0" layoutY="278.0" text="answer 3" />
+      <Label layoutX="22.0" layoutY="312.0" text="answer4" />
+      <Label layoutX="27.0" layoutY="362.0" text="right answer" />
+      <Label layoutX="226.0" layoutY="33.0" prefHeight="17.0" prefWidth="102.0" text="Edit Question" />
+      <Label layoutX="369.0" layoutY="112.0" prefHeight="18.0" prefWidth="124.0" text="new question ID" />
+      <TextField fx:id="Answer_1" layoutX="84.0" layoutY="200.0"  prefHeight="25.0" prefWidth="447.0" />
+      <TextField fx:id="Answer_2" layoutX="84.0" layoutY="234.0"  prefHeight="25.0" prefWidth="447.0" />
+      <TextField fx:id="Answer_3" layoutX="84.0" layoutY="274.0"  prefHeight="25.0" prefWidth="447.0" />
+      <TextField fx:id="Answer_4" layoutX="84.0" layoutY="308.0"  prefHeight="25.0" prefWidth="447.0" />
+      <TextField fx:id="Question_ID" layoutX="462.0" layoutY="109.0"  prefHeight="25.0" prefWidth="77.0" />
+      <MenuBar layoutX="108.0" layoutY="1.0" prefHeight="26.0" prefWidth="384.0">
+         <menus>
+            <Menu fx:id="teacher_menu_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="HomePage">
+               <items>
+                  <MenuItem fx:id="teacher_menu_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Go HomePage" />
+               </items></Menu>
+            <Menu fx:id="home_page_clicked" mnemonicParsing="false" text="Qeustions">
+               <items>
+                  <MenuItem fx:id="view_questions_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="View Questions collection" />
+                  <MenuItem fx:id="add_question_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Add Question" />
+                  <MenuItem fx:id="edit_question_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Edit Question" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Exams">
+               <items>
+                  <MenuItem fx:id="add_exam_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Build Exam" />
+                  <MenuItem fx:id="prepare_exam_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Prepare Exam" />
+                  <MenuItem fx:id="request_time_extention_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Request Time Extention" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Grades">
+               <items>
+                  <MenuItem fx:id="approve_grades_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Approve Grades" />
+                  <MenuItem fx:id="PViewGrades_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="View Grades" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+
+      <Label layoutX="184.0" layoutY="112.0" text="Question" />
+      <ChoiceBox fx:id="QuestionChooseScroll" layoutX="256.0" layoutY="108.0" onDragDetected="#ChooseQuestionDone"  prefHeight="26.0" prefWidth="102.0" />
+      <Label layoutX="20.0" layoutY="113.0" text="Subject" />
+      <ChoiceBox fx:id="SubjectScroll" layoutX="69.0" layoutY="107.0" onDragDetected="#SubjectDetected"  prefHeight="26.0" prefWidth="102.0" />
+      <TextField fx:id="RightAnswer" layoutX="106.0" layoutY="358.0"  prefHeight="25.0" prefWidth="77.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.scene.control.TableColumn?>
+        <?import javafx.scene.control.TableView?>
+        <?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" >
+<TableView fx:id="gradedExamsTable" prefWidth="600.0" prefHeight="400.0">
+    <columns>
+        <TableColumn text="Exam ID" fx:id="examIdColumn" prefWidth="100.0"/>
+        <TableColumn text="Student ID" fx:id="studentIdColumn" prefWidth="100.0"/>
+        <TableColumn text="Student Name" fx:id="studentNameColumn" prefWidth="150.0"/>
+        <TableColumn text="Grade" fx:id="gradeColumn" prefWidth="100.0"/>
+        <TableColumn text="Teacher ID" fx:id="teacherIdColumn" prefWidth="100.0"/>
+    </columns>
+</TableView>
+</AnchorPane>

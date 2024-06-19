@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="rootPane" layoutX="10.0" layoutY="10.0" prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="193.0" layoutY="14.0" prefHeight="32.0" prefWidth="287.0" text="Welcome Principal">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="principal_quetions_button" layoutY="108.0" minWidth="50.0" onAction="#principle_menu_handle" prefHeight="54.0" prefWidth="166.0" text="View Question Collection" />
+            <Button fx:id="PrincipleExams_button" layoutX="209.0" layoutY="108.0" minWidth="50.0" onAction="#principle_menu_handle" prefHeight="54.0" prefWidth="166.0" text="View Exams Collection" />
+            <Button fx:id="PViewGrades_button" layoutX="411.0" layoutY="108.0" minWidth="50.0" onAction="#principle_menu_handle" prefHeight="54.0" prefWidth="166.0" text="View Exams Grades" />
+            <Button fx:id="ExtraTimeApproval_button" layoutX="209.0" layoutY="214.0" minWidth="50.0" onAction="#principle_menu_handle" prefHeight="54.0" prefWidth="166.0" text="Time Requests" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

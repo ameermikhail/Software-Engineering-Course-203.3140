@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="rootPane" prefHeight="403.0" prefWidth="598.0">
+         <children>
+            <Label layoutX="249.0" layoutY="46.0" prefHeight="28.0" prefWidth="76.0" text="Do Exam">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <Button layoutX="243.0" layoutY="343.0" minWidth="50.0" onAction="#StartPressed" prefHeight="37.0" prefWidth="120.0" text="Start Exam" />
+            <TextField fx:id="ExamCodeTextField" layoutX="153.0" layoutY="167.0" prefHeight="26.0" prefWidth="134.0" />
+            <Label layoutX="56.0" layoutY="172.0" text="Insert Code" />
+            <Label layoutX="330.0" layoutY="172.0" text="Insert Id" />
+            <TextField fx:id="IdTextFeild" layoutX="393.0" layoutY="167.0" prefHeight="26.0" prefWidth="152.0" />
+            <MenuBar layoutX="155.0" layoutY="7.0" prefHeight="26.0" prefWidth="258.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="Homepage">
+                     <items>
+                        <MenuItem fx:id="student_menu_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Go HomePage" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Exams Grades">
+                     <items>
+                        <MenuItem fx:id="view_grades_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="View" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Exam">
+                     <items>
+                        <MenuItem fx:id="do_exam_button" mnemonicParsing="false" onAction="#Handle_menu_clicked" text="Do Exam" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

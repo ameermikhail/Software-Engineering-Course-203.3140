@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="rootPane" prefHeight="403.0" prefWidth="598.0">
+         <children>
+            <Label layoutX="265.0" layoutY="20.0" prefHeight="17.0" prefWidth="76.0" text="Manual Exam" />
+            <Label layoutX="46.0" layoutY="146.0" text="Upload Exam" />
+            <Button fx:id="Submit_Exam" layoutX="243.0" layoutY="343.0" minWidth="50.0" onAction="#SubmitExam" prefHeight="37.0" prefWidth="120.0" text="Submit Exam" />
+            <Label layoutX="46.0" layoutY="101.0" text=" Download Exam" />
+            <Button fx:id="Download_Exam" layoutX="155.0" layoutY="97.0" minWidth="50.0" onAction="#DownloadExam" prefHeight="26.0" prefWidth="89.0" text="Download" />
+            <Button fx:id="Upload_Exam" layoutX="155.0" layoutY="142.0" minWidth="50.0" onAction="#UploadExam" prefHeight="26.0" prefWidth="89.0" text="Upload" />
+            <Label fx:id="TimeLeftLabel" layoutX="138.0" layoutY="241.0" prefHeight="18.0" prefWidth="61.0" text="Time Left:" />
+            <Label fx:id="TimeLeftValue" layoutX="225.0" layoutY="237.0" prefHeight="26.0" prefWidth="152.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

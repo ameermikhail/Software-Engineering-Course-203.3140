@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.PrimaryController">
+   <top>
+      <Label text="Student List" />
+   </top>
+   <left>
+      <ListView fx:id="studentListView" prefHeight="300.0" prefWidth="200.0" onMouseClicked="#loadStudenGrades" />
+   </left>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" spacing="10.0" BorderPane.alignment="CENTER">
+         <Label text="New Grade: " />
+         <TextField fx:id="newGradeTextField" />
+         <Button fx:id="updateButton" onAction="#updateButtonAction" text="Update" />
+         <Button fx:id="ShowUpdated" onAction="#showUpdatedGradesButtonAction" text="Show Updated Grades" />
+      </HBox>
+   </bottom>
+   <center>
+      <ListView fx:id="gradesListView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
